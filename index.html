@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Music - Video - Playlist - Top - ranking">
+  <meta name="descripcion" content="Plataforma de Videos Musicales en linea 2018">
+  <title>PlatziVideo</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    *{margin:0}body{font-family:sans-serif}.container{display:grid;grid-template-columns:1fr}.header{background-color:#0F1220;display:grid;position:fixed;color:white;max-width:280px;height:100vh;padding:0 1.5em}.logo{padding:1.5em 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.playlist h3{margin-bottom:1em}.playlist ol{padding-left:1em}.playlist li{padding-bottom:1em;font-size:12px}.playlistFriends h3{margin-bottom:1em}.user01{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:.5em}.user01--img{border-radius:50%;padding-right:.5em}.user01--name{font-size:14px;display:inline-block}.headerMain{display:grid;grid-template-columns:auto 1fr;-webkit-box-align:center;-ms-flex-align:center;align-items:center;grid-area:headerMain;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:1em .5em}.search{-webkit-box-shadow:0 0 1px rgba(0, 0, 0, .1);box-shadow:0 0 1px rgba(0, 0, 0, .1);background:#EEEFF0;border-radius:3px;margin-left:1em}.search--icon{padding:0 1em;cursor:pointer}.search input{width:300px;background-color:transparent;line-height:4;outline:none;padding-left:.5em;border:none}.myAccount{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-right:2em}.myAccount--img{border-radius:50%;padding-right:.5em}.myAccount--name{font-size:14px;font-weight:400;color:#9A9CA0}.containerCover{overflow:auto}.scrollCover{display:grid;grid-template-columns:repeat(8, 1fr);margin-top:1em;grid-gap:15px;overflow:auto;width:1500px}.albumsList{margin:0 1em;grid-area:albumList;margin-top:2em}.destacados{overflow:auto}.destacados--descripcion{font-size:14px;color:#8C8F93}.destacados--title{font-size:25px}.cover img{max-width:100%}.cover a{color:black;text-decoration:none}.cover p{font-size:14px;font-weight:600}.los80{margin:1.5em 0;overflow:auto}.lastSong{background:-webkit-linear-gradient(45deg, #DE000D, #E63081);background:-o-linear-gradient(45deg, #DE000D, #E63081);background:linear-gradient(45deg, #DE000D, #E63081);position:fixed;bottom:0;left:328px;right:0;grid-area:lastSong;display:grid;grid-template-columns:100px minmax(100px, 300px);-webkit-box-align:center;-ms-flex-align:center;align-items:center;grid-gap:10px;padding:1em 0 1em 3.5em}.lastSong--p1,.lastSong--p2{color:white;padding-bottom:5px;font-size:14px}.main{margin-left:325px;overflow:auto;position:relative;display:grid;grid-template-columns:100%;grid-template-areas:"headerMain" "albumList" "lastSong"}.lastCover{margin-bottom:8em}.videoStream{display:grid;grid-template-columns:1fr}.videoStream iframe{width:100%;height:320px;position:relative}.infoStream{padding:0 1em;-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .1);box-shadow:0 1px 2px rgba(0, 0, 0, .1);padding-bottom:1em}.infoStream--title{font-size:25px;padding-top:.5em}.infoStream--views{color:#8D958A;font-size:14px;display:block}.infoStream--addList{padding:.5em;border-radius:4px;color:white;display:inline-block;font-size:14px;text-decoration:none;background:-webkit-gradient(linear, right top, left top, from(#B4001F), to(#E52F7F));background:-webkit-linear-gradient(right, #B4001F, #E52F7F);background:-o-linear-gradient(right, #B4001F, #E52F7F);background:linear-gradient(to left, #B4001F, #E52F7F)}.infoStream--buttons{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:1em;margin-bottom:1.5em;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:1.5em}.compartir{margin:0 1.5em}.compartir,.guardar{font-size:12px;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.save,.share{font-size:24px}@media screen and (max-width:800px){.container{grid-template-columns:1fr;height:100vh}.lastSong{margin-top:12em;left:0}.header{display:none}.main{margin-left:0}}.return{font-size:45px;color:white;color:#B4001F;position:absolute;display:none;top:60px;left:25px}.videoStream:hover .return{display:block}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <figure class="logo">
+        <img src="assets/logo.png" class="logo--img" width="150">
+      </figure>
+
+      <section class="playlist">
+        <h3>MI PLAYLIST</h3>
+
+        <ol>
+          <li>
+            5 Reasons To Choose A Notebook Over A Computer Desktop
+          </li>
+          <li>
+            The Science of Supertbons
+          </li>
+          <li>
+            The Science of Supertbons
+          </li>
+          <li>
+            Get Around Early With A New York Limousine Service
+          </li>
+          <li>
+            How to Remove Widney Stones
+          </li>
+          <li>
+            The Science of Supertbons
+          </li>
+          <li>
+            5 Reasons To Choose A Notebook Over A Computer Desktop
+          </li>
+          <li>
+            Get Around Early With A New York Limousine Service
+          </li>
+          <li>
+            How to Remove Widney Stones
+          </li>
+          <li>
+            The Science of Supertbons
+          </li>
+        </ol>
+      </section>
+
+      <section class="playlistFriends">
+        <h3>PLAYLIST DE AMIGOS</h3>
+
+        <li class="user01">
+          <img class="user01--img" src="http://los40es00.epimg.net/los40/imagenes/2016/10/17/fotorrelato/1476727216_270310_1476727637_album_normal.jpg"
+            alt="" width="30" height="30">
+          <p class="user01--name">Gordon Carrol</p>
+        </li>
+        <li class="user01">
+          <img class="user01--img" src="https://www.lafactoriadelshow.com/pujaes/avatars/fitxes/3942_xth.jpg?596df9a5" alt="" height="30"
+            width="30">
+          <p class="user01--name">Adeline Wikins</p>
+        </li>
+        <li class="user01">
+          <img class="user01--img" src="https://st-listas.20minutos.es/images/2014-11/389026/4563795_640px.jpg?1414897944" alt="" width="30"
+            height="30">
+          <p class="user01--name">Jhon Weeler</p>
+        </li>
+        <li class="user01">
+          <img class="user01--img" src="https://s3-eu-west-1.amazonaws.com/alebiletpics/0edd12ea3f1544a7987edb5126895b2c.jpg" alt=""
+            width="30" height="30">
+          <p class="user01--name">Katherine Nelson</p>
+        </li>
+      </section>
+    </header>
+
+    <main class="main">
+      <header class="headerMain">
+        <div class="search">
+          <input type="text" name="search" placeholder="Buscar a un artista, tema o amigo">
+          <i class="fa fa-search search--icon"></i>
+        </div>
+
+        <div class="myAccount">
+          <i class="fa fa-arrow myAccount--icon"></i>
+          <img class="myAccount--img" src="http://d3cprjxvoejtmm.cloudfront.net/images/2013/10/Tips-para-la-foto-de-perfil.jpg" width="35"
+            height="35">
+          <p class="myAccount--name">Harvery Ruiz</p>
+        </div>
+      </header>
+
+      <section class="albumsList">
+        <div class="destacados">
+          <p class="destacados--descripcion">Lo mejor de la semana</p>
+          <h3 class="destacados--title">DESTACADOS</h3>
+
+          <div class="containerCover">
+            <div class="scrollCover">
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <a href="watchVideo.html">
+                 <img src="assets/album02.png">
+                 <p>The Cranberries - Zombie</p>
+                </a>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album02.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="los80">
+          <p class="los80--descripcion">Los mejores exitos</p>
+          <h3 class="los80--title">ROMANTICAS</h3>
+
+          <div class="containerCover">
+            <div class="scrollCover">
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album02.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album02.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="los80">
+          <p class="los80--descripcion">Los mejores exitos</p>
+          <h3 class="los80--title">Los 80's</h3>
+
+          <div class="containerCover lastCover">
+            <div class="scrollCover">
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album02.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album03.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnVKYmFUmVSsR9xAFEgQ2TSApok7rSpweANEEnnzMccQ5nwQe">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album02.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+              <div class="cover">
+                <img src="assets/album04.png">
+                <p>Get the Boot A Birds Eye Look into Mise Boot Camps</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="lastSong">
+        <img class="assets/lastSong--cover" src="lastSong.png" width="90">
+        <div class="SongList">
+          <p class="lastSong--p1">CONTINUA VIENDO</p>
+          <P class=lastSong--p2>THE CRANBERRIES - ZOMBIE</P>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
