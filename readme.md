@@ -1,3 +1,3 @@
-#PLATZIVIDEO
+# PLATZIVIDEO
 
-##Plataforma de videoStream - Reto Platzi CSS Grid Layout
+## Plataforma de videoStream - Reto Platzi CSS Grid Layout
