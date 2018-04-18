@@ -1,14 +1,14 @@
 * {
-  margin: 0;
+  margin: 0
 }
 
 body {
-  font-family: sans-serif;
+  font-family: sans-serif
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr
 }
 
 .header {
@@ -18,59 +18,72 @@ body {
   color: white;
   max-width: 280px;
   height: 100vh;
-  padding: 0 1.5em;
+  padding: 0 1.5em
 }
 
 .logo {
   padding: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 
 .playlist h3 {
-  margin-bottom: 1em;
+  margin-bottom: 1em
 }
 
 .playlist ol {
-  padding-left: 1em;
+  padding-left: 1em
 }
 
 .playlist li {
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 12px
 }
 
 .playlistFriends h3 {
-  margin-bottom: 1em;
+  margin-bottom: 1em
 }
 
 .user01 {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-bottom: .5em;
+  margin-bottom: .5em
 }
 
 .user01--img {
   border-radius: 50%;
-  padding-right: .5em;
+  padding-right: .5em
 }
 
 .user01--name {
   font-size: 14px;
-  display: inline-block;
+  display: inline-block
 }
 
 .headerMain {
   display: grid;
   grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   grid-area: headerMain;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 1em .5em;
+  margin: 1em .5em
 }
 
 .search {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .1);
   box-shadow: 0 0 1px rgba(0, 0, 0, .1);
   background: #EEEFF0;
   border-radius: 3px;
@@ -79,7 +92,7 @@ body {
 
 .search--icon {
   padding: 0 1em;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .search input {
@@ -88,14 +101,20 @@ body {
   line-height: 4;
   outline: none;
   padding-left: .5em;
-  border: none;
+  border: none
 }
 
 .myAccount {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-right: 2em;
+  margin-right: 2em
 }
 
 .myAccount--img {
@@ -106,11 +125,11 @@ body {
 .myAccount--name {
   font-size: 14px;
   font-weight: 400;
-  color: #9A9CA0;
+  color: #9A9CA0
 }
 
 .containerCover {
-  overflow: auto;
+  overflow: auto
 }
 
 .scrollCover {
@@ -119,48 +138,50 @@ body {
   margin-top: 1em;
   grid-gap: 15px;
   overflow: auto;
-  width: 1500px;
+  width: 1500px
 }
 
 .albumsList {
   margin: 0 1em;
   grid-area: albumList;
-  margin-top: 2em;
+  margin-top: 2em
 }
 
 .destacados {
-  overflow: auto;
+  overflow: auto
 }
 
 .destacados--descripcion {
   font-size: 14px;
-  color: #8C8F93;
+  color: #8C8F93
 }
 
 .destacados--title {
-  font-size: 25px;
+  font-size: 25px
 }
 
 .cover img {
-  max-width: 100%;
+  max-width: 100%
 }
 
 .cover a {
   color: black;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .cover p {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 600
 }
 
 .los80 {
   margin: 1.5em 0;
-  overflow: auto;
+  overflow: auto
 }
 
 .lastSong {
+  background: -webkit-linear-gradient(45deg, #DE000D, #E63081);
+  background: -o-linear-gradient(45deg, #DE000D, #E63081);
   background: linear-gradient(45deg, #DE000D, #E63081);
   position: fixed;
   bottom: 0;
@@ -169,59 +190,62 @@ body {
   grid-area: lastSong;
   display: grid;
   grid-template-columns: 100px minmax(100px, 300px);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   grid-gap: 10px;
-  padding: 1em 0 1em 3.5em;
+  padding: 1em 2.5em
 }
 
 .lastSong--p1,
 .lastSong--p2 {
   color: white;
   padding-bottom: 5px;
-  font-size: 14px;
+  font-size: 14px
 }
 
 .main {
-  margin-left: 325px;
   overflow: auto;
+  margin-left: 328px;
   position: relative;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "headerMain" "albumList" "lastSong";
 }
 
 .lastCover {
-  margin-bottom: 8em;
+  margin-bottom: 8em
 }
 
-/*PAGE 2*/
-
 .videoStream {
-  display: grid;
-  grid-template-columns: 1fr;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .videoStream iframe {
+  position: absolute;
   width: 100%;
-  height: 320px;
-  position: relative;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .infoStream {
   padding: 0 1em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-  padding-bottom: 1em;
+  padding-bottom: 1em
 }
 
 .infoStream--title {
   font-size: 25px;
-  padding-top: .5em;
+  padding-top: .5em
 }
 
 .infoStream--views {
   color: #8D958A;
   font-size: 14px;
-  display: block;
+  display: block
 }
 
 .infoStream--addList {
@@ -231,54 +255,130 @@ body {
   display: inline-block;
   font-size: 14px;
   text-decoration: none;
-  background: linear-gradient(to left, #B4001F, #E52F7F);
+  background: -webkit-gradient(linear, right top, left top, from(#B4001F), to(#E52F7F));
+  background: -webkit-linear-gradient(right, #B4001F, #E52F7F);
+  background: -o-linear-gradient(right, #B4001F, #E52F7F);
+  background: linear-gradient(to left, #B4001F, #E52F7F)
 }
 
 .infoStream--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1em;
   margin-bottom: 1.5em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-top: 1.5em;
+  margin-top: 1.5em
 }
 
 .compartir {
-  margin: 0 1.5em;
+  margin: 0 1.5em
 }
 
 .compartir,
 .guardar {
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
 }
 
 .save,
 .share {
-  font-size: 24px;
+  font-size: 24px
 }
 
-/*PAGE 2*/
+/* COMENTARIOS */
 
-@media screen and (max-width: 800px) {
+.contenedorVideoStream {
+  display: grid;
+  grid-template-columns: minmax(auto, 55%) minmax(auto, 35%);
+  grid-gap: 25px;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.comentarios h2 {
+  margin-bottom: 1em;
+}
+
+.sugerencia h2 {
+  margin-bottom: 1em;
+}
+
+.post-sug01 {
+  margin-bottom: 1em;
+}
+
+.comentar {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  background: #EEEFF0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 6px 6px 0;
+}
+
+.comentar img {
+  margin-left: .4em;
+}
+
+.comentar input {
+  width: 300px;
+  background-color: transparent;
+  line-height: 4;
+  outline: none;
+  padding-left: .5em;
+  border: none;
+}
+
+.comentariosList {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.infoComment p {
+  font-size: 14px;
+}
+
+@media screen and (max-width:800px) {
   .container {
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 100vh
   }
+  .contenedorPost {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
+  }
+
   .lastSong {
     margin-top: 12em;
-    left: 0;
+    left: 0
   }
   .header {
-    display: none;
+    display: none
   }
   .main {
-    margin-left: 0;
+    margin-left: 0
   }
 }
+
 .return {
   font-size: 45px;
   color: white;
@@ -286,9 +386,21 @@ body {
   position: absolute;
   display: none;
   top: 60px;
-  left: 25px;
+  left: 25px
 }
 
 .videoStream:hover .return {
   display: block;
 }
+
+@media screen and (max-width: 940px) {
+  .search {
+    display: none;
+  }
+  .myAccount {
+    margin-left: 1em;
+  }
+  .contenedorVideoStream {
+    grid-template-columns: 1fr;
+    margin: 2em 1em;
+  }
