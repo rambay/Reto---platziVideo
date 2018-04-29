@@ -81,11 +81,15 @@ body {
   justify-content: space-between;
   margin: 1em .5em
 }
+.songList a {
+  color: white;
+}
 
 .search {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .1);
   box-shadow: 0 0 1px rgba(0, 0, 0, .1);
-  background: #EEEFF0;
+  background: rgba(0, 0, 0, .9);
+  color: white;
   border-radius: 3px;
   margin-left: 1em;
 }
@@ -99,8 +103,9 @@ body {
   width: 300px;
   background-color: transparent;
   line-height: 4;
+  color: white;
   outline: none;
-  padding-left: .5em;
+  padding-left: 1em;
   border: none
 }
 
@@ -125,7 +130,7 @@ body {
 .myAccount--name {
   font-size: 14px;
   font-weight: 400;
-  color: #9A9CA0
+  color: black;
 }
 
 .containerCover {
@@ -197,8 +202,7 @@ body {
   padding: 1em 2.5em
 }
 
-.lastSong--p1,
-.lastSong--p2 {
+.lastSong--p1, .lastSong--p2 {
   color: white;
   padding-bottom: 5px;
   font-size: 14px
@@ -234,7 +238,7 @@ body {
   padding: 0 1em;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-  padding-bottom: 1em
+  padding-bottom: 1em;
 }
 
 .infoStream--title {
@@ -277,8 +281,7 @@ body {
   margin: 0 1.5em
 }
 
-.compartir,
-.guardar {
+.compartir, .guardar {
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,8 +298,7 @@ body {
   flex-direction: column
 }
 
-.save,
-.share {
+.save, .share {
   font-size: 24px
 }
 
@@ -366,7 +368,6 @@ body {
     grid-template-columns: repeat(auto-fill, 320px);
     justify-content: center;
   }
-
   .lastSong {
     margin-top: 12em;
     left: 0
@@ -393,9 +394,119 @@ body {
   display: block;
 }
 
+/* ALBUM */
+
+.headerAlbum {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.headerAlbum>img {
+  filter: grayscale(100%);
+}
+
+.topAlbum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 45px 400px 1fr;
+  align-items: center;
+  padding-top: 1em;
+  justify-content: space-between;
+}
+
+.goBack {
+  margin-left: 1em;
+  font-size: 20px;
+  color: white;
+}
+
+.copyAlbum {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.songList--num {
+  cursor: pointer;
+}
+
+.copyAlbum--sub {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.copyAlbum--title {
+  color: #fff;
+  font-size: 90px;
+}
+
+.fa-play {
+  color: #c92558;
+}
+
+.headerAlbum img {
+  display: block;
+}
+
+.fa-plus {
+  color: #e0be55;
+}
+
+.playlist-list--song {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.fa {
+  padding: 0 .5em;
+}
+
+.playlist-list ol {
+  padding: 0;
+}
+
+.playlist-list ol li {
+  list-style: none;
+}
+
+.playlistAlbum {
+  padding: 1.5em;
+  background: #0a0c14;
+  justify-self: center;
+  color: white;
+}
+
+.playlistAlbum--title {
+  margin-bottom: 1.5em;
+  color: #c92558;
+}
+
+.songList {
+  display: grid;
+  grid-template-columns: 30px 30px 1fr;
+}
+
+.playlist-list {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  padding-bottom: .5em;
+}
+
+/* ALBUM */
+
 @media screen and (max-width: 940px) {
   .search {
     display: none;
+  }
+  main .topAlbum {
+    grid-template-columns: 100px 1fr;
   }
   .myAccount {
     margin-left: 1em;
